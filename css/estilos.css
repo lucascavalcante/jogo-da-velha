@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+body {
+  font-family: "Open Sans";
+}
+
+h2 {
+  margin-top: -5px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 240px;
+  border-radius: 10px;
+  background-color: teal;
+  border: 3px solid black;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.celula {
+  width: 75px;
+  height: 65px;
+  font-size: 30pt;
+  margin: 4px 2px;
+  font-weight: 300;
+  padding-top: 10px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .container {
+    max-width: 400px;
+  }
+  .celula {
+    margin: 13px 20px;
+  }
+}
