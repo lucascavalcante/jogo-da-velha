@@ -17,7 +17,7 @@ const COMBINACOES = [
 document.addEventListener("click", (event) => {
   if (event.target.matches(".celula")) {
     jogar(event.target.id, JOGADOR_X);
-    bot();
+    setTimeout(() => bot(), 500);
   }
 });
 
